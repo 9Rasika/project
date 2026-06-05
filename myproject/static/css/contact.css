@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f7f4;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    padding: 60px;
+    background: linear-gradient(to bottom, #eaf3ed, #ffffff);
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.card {
+    background: #fff;
+    width: 550px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.icon {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #006633;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #006633;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #004d26;
+}
+
+.success-msg {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f9ef;
+    border: 2px solid #1db954;
+    border-radius: 8px;
+    text-align: center;
+    color: #0f5132;
+}
+
+
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6f4ea;
+    color: #0f5132;
+    padding: 15px 20px;
+    border: 1px solid #badbcc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.alert-text {
+    font-size: 14px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}

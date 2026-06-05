@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+quiz
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waste Management Quiz</title>
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Test Your Knowledge</h1>
+    <p>
+        Take our interactive quiz to test your understanding of waste management,
+        recycling, and sustainable living practices.
+    </p>
+</section>
+
+<!-- QUIZ CARD -->
+<div class="quiz-container">
+
+    <!-- START SCREEN -->
+    <div id="startScreen" class="card">
+        <div class="icon">🏆</div>
+        <h2>Waste Management Quiz</h2>
+        <p>Answer 10 questions and learn more about sustainable practices.</p>
+
+        <input type="text" id="username" placeholder="Enter your name">
+
+        <div class="stats">
+            <div><strong>10</strong><span>Questions</span></div>
+            <div><strong>~5</strong><span>Minutes</span></div>
+            <div><strong>70%</strong><span>To Pass</span></div>
+        </div>
+
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quizScreen" class="card hidden">
+
+        <div class="top-bar">
+            <span id="progressText">Question 1 of 10</span>
+            <span id="timer">⏱ 00:00</span>
+            <span id="score">Score: 0/0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+
+        <div id="feedback"></div>
+
+        <button id="nextBtn" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="resultScreen" class="card hidden">
+        <h2>Quiz Completed 🎉</h2>
+        <p id="finalScore"></p>
+        <button onclick="location.reload()">Restart Quiz</button>
+    </div>
+
+</div>
+
+<script src="{% static 'js/quiz.js' %}"></script>
+</body>
+</html>
+
+{% endblock %}

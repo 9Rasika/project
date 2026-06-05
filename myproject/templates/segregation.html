@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+segregation
+{% endblock title %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waste Segregation & Recycling</title>
+    <link rel="stylesheet" href="{% static 'css/segregation.css' %}">
+</head>
+<body>
+
+<section class="hero">
+    <h1>Waste Segregation & Recycling</h1>
+    <p>
+        Master the art of waste segregation with our comprehensive step-by-step guide.
+        Proper sorting is essential for effective recycling and environmental protection.
+    </p>
+</section>
+
+<section class="bins">
+    <img src="{% static '1.avif' %}" alt="Segregation Bins">
+</section>
+
+<section class="steps">
+    <h2>5-Step Segregation Process</h2>
+
+    <div class="step-card">
+        <span class="step">Step 1</span>
+        <h3>Set Up Separate Bins</h3>
+        <ul>
+            <li>Use color-coded bins</li>
+            <li>Place bins in convenient locations</li>
+            <li>Ensure bins are properly sized</li>
+            <li>Add clear pictorial labels</li>
+        </ul>
+    </div>
+
+    <div class="step-card">
+        <span class="step">Step 2</span>
+        <h3>Clean and Prepare Items</h3>
+        <ul>
+            <li>Rinse food containers</li>
+            <li>Remove caps and labels</li>
+            <li>Flatten cardboard boxes</li>
+            <li>Dry items before recycling</li>
+        </ul>
+    </div>
+
+    <div class="step-card">
+        <span class="step">Step 3</span>
+        <h3>Sort by Material Type</h3>
+        <ul>
+            <li>Paper & cardboard together</li>
+            <li>Plastics by recycling code</li>
+            <li>Glass bottles and jars</li>
+            <li>Metal cans separately</li>
+        </ul>
+    </div>
+
+    <div class="step-card">
+        <span class="step">Step 4</span>
+        <h3>Handle Special Items</h3>
+        <ul>
+            <li>Store e-waste separately</li>
+            <li>Keep hazardous waste safe</li>
+            <li>Bag organic waste</li>
+            <li>Never mix waste categories</li>
+        </ul>
+    </div>
+
+    <div class="step-card">
+        <span class="step">Step 5</span>
+        <h3>Schedule Regular Disposal</h3>
+        <ul>
+            <li>Follow local collection schedules</li>
+            <li>Use recycling centers if needed</li>
+            <li>Dispose hazardous waste properly</li>
+            <li>Compost organic waste</li>
+        </ul>
+    </div>
+</section>
+
+<section class="accordion">
+    <h2>What Can Be Recycled?</h2>
+
+    <details open>
+        <summary>Paper & Cardboard</summary>
+        <div class="grid">
+            <div class="accepted">
+                <h4>✔ Accepted Items</h4>
+                <ul>
+                    <li>Newspapers</li>
+                    <li>Magazines</li>
+                    <li>Office paper</li>
+                    <li>Cardboard boxes</li>
+                    <li>Paper bags</li>
+                </ul>
+            </div>
+            <div class="not-accepted">
+                <h4>✖ Not Accepted</h4>
+                <ul>
+                    <li>Waxed paper</li>
+                    <li>Tissue paper</li>
+                    <li>Paper towels</li>
+                    <li>Greasy pizza boxes</li>
+                </ul>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>Plastics</summary>
+        <div class="grid">
+            <div class="accepted">
+                <h4>✔ Accepted Items</h4>
+                <ul>
+                    <li>Bottles (#1, #2)</li>
+                    <li>Containers (#5)</li>
+                    <li>Rigid plastics</li>
+                </ul>
+            </div>
+            <div class="not-accepted">
+                <h4>✖ Not Accepted</h4>
+                <ul>
+                    <li>Plastic bags</li>
+                    <li>Styrofoam</li>
+                    <li>Plastic wrap</li>
+                </ul>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>Glass</summary>
+        <div class="grid">
+            <div class="accepted">
+                <h4>✔ Accepted Items</h4>
+                <ul>
+                    <li>Bottles</li>
+                    <li>Jars</li>
+                    <li>Clear & colored glass</li>
+                </ul>
+            </div>
+            <div class="not-accepted">
+                <h4>✖ Not Accepted</h4>
+                <ul>
+                    <li>Window glass</li>
+                    <li>Mirrors</li>
+                    <li>Ceramics</li>
+                </ul>
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>Metals</summary>
+        <div class="grid">
+            <div class="accepted">
+                <h4>✔ Accepted Items</h4>
+                <ul>
+                    <li>Aluminum cans</li>
+                    <li>Steel cans</li>
+                    <li>Clean foil</li>
+                    <li>Metal lids</li>
+                </ul>
+            </div>
+            <div class="not-accepted">
+                <h4>✖ Not Accepted</h4>
+                <ul>
+                    <li>Aerosol cans</li>
+                    <li>Paint cans</li>
+                    <li>Hangers</li>
+                </ul>
+            </div>
+        </div>
+    </details>
+
+</section>
+
+</body>
+</html>
+
+{% endblock %}

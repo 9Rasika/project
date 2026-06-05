@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dendrophiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                🌿 <span>Dendrophiles</span>
+            </a>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul class="nav-links">
+            <li><a href="home">Home</a></li>
+            <li><a href="typeOfWaste">Types of Waste</a></li>
+            <li><a href="segregation">Segregation & Recycling</a></li>
+            <li><a href="sustainable">Sustainable Living</a></li>
+            <li><a href="quiz">Quiz</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<main class="main-content">
+    {% block content %}{% endblock %}
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025. Built with 💚</p>
+    <p class="footer-text">
+        Dendrophiles is dedicated to educating communities about sustainable
+        waste management practices. Together, we can make a difference for
+        our planet.
+    </p>
+</footer>
+
+</body>
+</html>

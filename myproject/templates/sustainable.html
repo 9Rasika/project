@@ -1,0 +1,125 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+sustainable
+{% endblock title %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sustainable Living</title>
+    <link rel="stylesheet" href="{% static 'css/sustainable.css' %}">
+</head>
+<body>
+
+<section class="hero">
+    <h1>Sustainable Living Tips</h1>
+    <p>Small habits, big impact. Choose a section to begin your eco journey.</p>
+</section>
+
+<!-- Tabs -->
+<div class="tabs">
+    <button class="tab-btn active" data-tab="reduce">Reduce Waste</button>
+    <button class="tab-btn" data-tab="compost">Composting</button>
+    <button class="tab-btn" data-tab="eco">Eco Habits</button>
+</div>
+
+<!-- CONTENT -->
+
+<!-- Reduce Waste -->
+<section class="tab-content active" id="reduce">
+    <h2>Reduce Waste</h2>
+    <p class="subtitle">The best waste is the waste you never create.</p>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Reusable Products</h3>
+            <p>Use cloth bags, steel bottles, reusable containers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Buy in Bulk</h3>
+            <p>Reduce packaging waste by buying larger quantities.</p>
+        </div>
+
+        <div class="card">
+            <h3>Avoid Single-Use Plastics</h3>
+            <p>Say no to plastic straws, cups, and cutlery.</p>
+        </div>
+
+        <div class="card">
+            <h3>Meal Planning</h3>
+            <p>Plan meals to avoid food wastage.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Composting -->
+<section class="tab-content" id="compost">
+    <h2>Composting</h2>
+    <p class="subtitle">Turn waste into wealth 🌱</p>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>What Is Composting?</h3>
+            <p>Natural process of recycling organic waste into fertilizer.</p>
+        </div>
+
+        <div class="card">
+            <h3>Green Waste</h3>
+            <p>Vegetable peels, fruit waste, tea leaves.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brown Waste</h3>
+            <p>Dry leaves, paper, cardboard.</p>
+        </div>
+
+        <div class="card">
+            <h3>Benefits</h3>
+            <p>Improves soil, reduces landfill waste, eco-friendly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Eco Habits -->
+<section class="tab-content" id="eco">
+    <h2>Eco-Friendly Habits</h2>
+    <p class="subtitle">Live green every day 💚</p>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Save Electricity</h3>
+            <p>Switch off lights, use LED bulbs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Save Water</h3>
+            <p>Fix leaks, use buckets instead of showers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Public Transport</h3>
+            <p>Reduce carbon footprint by using buses & cycles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Plant Trees</h3>
+            <p>Increase greenery and improve air quality.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="{% static 'js/sustainable.js' %}"></script>
+</body>
+</html>
+
+{% endblock %}

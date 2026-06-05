@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<!-- HERO SECTION -->
+<section class="hero-section">
+
+    <img src="{% static 'hero.jpg' %}" alt="Hero Background" class="hero-bg">
+
+    <div class="hero-overlay">
+        <h1>Welcome to Dendrophiles</h1>
+        <p>
+            Empowering communities through education on sustainable waste
+            management practices
+        </p>
+        <a href="segregation" class="btn-primary">Start Learning</a>
+    </div>
+
+</section>
+
+
+<!-- WHY WASTE MANAGEMENT -->
+<section class="why-section">
+    <h2>Why Waste Management Matters</h2>
+    <p class="why-text">
+        Every day, millions of tons of waste are generated worldwide.
+        Proper waste management is crucial for protecting our environment,
+        conserving natural resources, and ensuring a sustainable future for
+        generations to come. At Dendrophiles, we believe that education is
+        the first step toward meaningful change.
+    </p>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>2.01B</h3>
+            <p>Tons of waste generated annually</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>75%</h3>
+            <p>Of waste could be recycled</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>100+</h3>
+            <p>Years for plastic to decompose</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- RESOURCES -->
+<section class="resources-section">
+    <h2>Explore Our Resources</h2>
+
+    <div class="resource-grid">
+
+        <a href="typeOfWaste" class="resource-link">
+            <div class="resource-card">
+                <h4>Types of Waste</h4>
+                <p>
+                    Learn about different categories of household waste and
+                    how to identify them.
+                </p>
+            </div>
+        </a>
+
+        <a href="segregation" class="resource-link">
+            <div class="resource-card">
+                <h4>Segregation & Recycling</h4>
+                <p>
+                    Step-by-step guides on proper waste separation and recycling
+                    techniques.
+                </p>
+            </div>
+        </a>
+
+        <a href="sustainable" class="resource-link">
+            <div class="resource-card">
+                <h4>Sustainable Living</h4>
+                <p>
+                    Discover eco-friendly habits, composting tips, and ways
+                    to reduce waste.
+                </p>
+            </div>
+        </a>
+
+        <a href="quiz" class="resource-link">
+            <div class="resource-card">
+                <h4>Take a Quiz</h4>
+                <p>
+                    Test your knowledge on waste management and sustainable
+                    practices.
+                </p>
+            </div>
+        </a>
+
+        <a href="contact" class="resource-link">
+            <div class="resource-card">
+                <h4>Get in Touch</h4>
+                <p>
+                    Have questions? Contact us to learn more about waste
+                    management.
+                </p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta-section">
+    <h2>Ready to Make a Difference?</h2>
+    <p>
+        Start your journey toward sustainable living today.
+        Every small action counts in creating a cleaner, greener planet.
+    </p>
+    <a href="sustainable" class="btn-primary">Learn Sustainable Practices</a>
+</section>
+
+{% endblock content %}

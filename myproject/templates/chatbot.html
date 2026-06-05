@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Chatbot
+{% endblock title %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/chatbot.css' %}">
+
+<!-- CHATBOT JUST BELOW NAVBAR -->
+<div class="chat-wrapper">
+  
+  <div class="chat-header">
+    🤖 AI Chatbot
+  </div>
+
+  <div class="chat-body" id="response">
+    <div class="bot-msg"> Hi 👋 How can I help you? </div>
+  </div>
+
+  <div class="chat-footer">
+    <textarea id="prompt" placeholder="Type your message..."></textarea>
+    <button onclick="sendPrompt()"id="send">➤</button>
+  </div>
+
+</div>
+
+<script src="{% static 'js/app.js' %}"></script>
+
+{% endblock body %}

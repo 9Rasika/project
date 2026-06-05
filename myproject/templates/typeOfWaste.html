@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+typeOfWaste
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/typeOfWaste.css' %}">
+<!-- HEADER SECTION -->
+<section class="page-header">
+    <div class="container">
+        <h1>Types of Waste</h1>
+        <p>
+            Understanding different waste categories is the first step toward effective waste management.
+            Learn how to identify and properly handle each type of waste.
+        </p>
+    </div>
+</section>
+
+<!-- ORGANIC WASTE -->
+<section class="waste-card">
+    <div class="waste-grid">
+        <div class="waste-image">
+            <img src="{% static '1.avif' %}" alt="Organic Waste">
+        </div>
+        <div class="waste-content">
+            <span class="tag green">Organic Waste</span>
+            <h2>Organic Waste</h2>
+            <p>
+                Biodegradable waste from plants and animals that can decompose naturally.
+                This is the most common type of household waste.
+            </p>
+
+            <h4>Common Examples:</h4>
+            <ul>
+                <li>Food scraps and leftovers</li>
+                <li>Fruit and vegetable peels</li>
+                <li>Coffee grounds and tea bags</li>
+                <li>Eggshells</li>
+                <li>Garden waste (leaves, grass clippings)</li>
+                <li>Paper towels and napkins</li>
+            </ul>
+
+            <hr>
+
+            <h4>Proper Disposal:</h4>
+            <p>Can be composted or used for biogas production. Never mix with other waste types.</p>
+        </div>
+    </div>
+</section>
+
+<!-- RECYCLABLE -->
+<section class="waste-card">
+    <div class="waste-grid reverse">
+        <div class="waste-image">
+            <img src="{% static '2.avif' %}" alt="Recyclable Waste">
+        </div>
+        <div class="waste-content">
+            <span class="tag blue">Recyclable Materials</span>
+            <h2>Recyclable Materials</h2>
+            <p>
+                Materials that can be processed and transformed into new products,
+                reducing the need for raw materials.
+            </p>
+
+            <h4>Common Examples:</h4>
+            <ul>
+                <li>Paper and cardboard</li>
+                <li>Glass bottles and jars</li>
+                <li>Plastic containers</li>
+                <li>Metal cans (aluminum, steel)</li>
+                <li>Newspapers and magazines</li>
+                <li>Clean packaging materials</li>
+            </ul>
+
+            <hr>
+
+            <h4>Proper Disposal:</h4>
+            <p>Clean and sort by material type. Check local recycling guidelines.</p>
+        </div>
+    </div>
+</section>
+
+<!-- E-WASTE -->
+<section class="waste-card">
+    <div class="waste-grid">
+        <div class="waste-image">
+            <img src="{% static '3.avif' %}" alt="E-Waste">
+        </div>
+        <div class="waste-content">
+            <span class="tag purple">Electronic Waste (E-Waste)</span>
+            <h2>Electronic Waste (E-Waste)</h2>
+            <p>
+                Discarded electrical or electronic devices. Contains valuable materials
+                but also hazardous substances.
+            </p>
+
+            <h4>Common Examples:</h4>
+            <ul>
+                <li>Old computers and laptops</li>
+                <li>Mobile phones and tablets</li>
+                <li>Televisions and monitors</li>
+                <li>Batteries</li>
+                <li>Small appliances</li>
+                <li>Cables and chargers</li>
+            </ul>
+
+            <hr>
+
+            <h4>Proper Disposal:</h4>
+            <p>Take to designated e-waste collection centers. Never dispose in regular trash.</p>
+        </div>
+    </div>
+</section>
+
+<!-- HAZARDOUS -->
+<section class="waste-card">
+    <div class="waste-grid reverse">
+        <div class="waste-image">
+            <img src="{% static '1.avif' %}" alt="Hazardous Waste">
+        </div>
+        <div class="waste-content">
+            <span class="tag red">Hazardous Waste</span>
+            <h2>Hazardous Waste</h2>
+            <p>
+                Waste that poses substantial or potential threats to public health or the environment.
+            </p>
+
+            <h4>Common Examples:</h4>
+            <ul>
+                <li>Paints and solvents</li>
+                <li>Cleaning chemicals</li>
+                <li>Pesticides and herbicides</li>
+                <li>Motor oil and automotive fluids</li>
+                <li>Fluorescent bulbs</li>
+                <li>Medical waste</li>
+            </ul>
+
+            <hr>
+
+            <h4>Proper Disposal:</h4>
+            <p>Requires special handling. Contact local hazardous waste facilities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TIPS -->
+<section class="tips-section">
+    <h2>Quick Identification Tips</h2>
+
+    <div class="tips-grid">
+        <div class="tip-box">
+            <h4>Check Labels</h4>
+            <p>Look for recycling symbols and disposal instructions on packaging.</p>
+        </div>
+        <div class="tip-box">
+            <h4>When in Doubt</h4>
+            <p>Contact local waste management authorities for guidance.</p>
+        </div>
+        <div class="tip-box">
+            <h4>Keep It Clean</h4>
+            <p>Rinse recyclables to remove food residue.</p>
+        </div>
+        <div class="tip-box">
+            <h4>Separate Early</h4>
+            <p>Use separate bins to make waste sorting easier.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+

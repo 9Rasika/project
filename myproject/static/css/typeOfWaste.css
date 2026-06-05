@@ -1,0 +1,104 @@
+/* HEADER */
+.page-header {
+    background: linear-gradient(#eef3ef, #ffffff);
+    padding: 70px 0;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* WASTE CARD */
+.waste-card {
+    padding: 50px 0;
+}
+
+.waste-grid {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.waste-grid.reverse {
+    direction: rtl;
+}
+
+.waste-grid.reverse * {
+    direction: ltr;
+}
+
+.waste-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* CONTENT */
+.waste-content h2 {
+    margin: 10px 0;
+}
+
+.waste-content ul {
+    padding-left: 18px;
+}
+
+.waste-content li {
+    margin-bottom: 6px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.green { background: #e6f7ec; color: #2e7d32; }
+.blue { background: #e8f0fe; color: #1a73e8; }
+.purple { background: #f3e8ff; color: #7b1fa2; }
+.red { background: #fdecea; color: #c62828; }
+
+/* TIPS */
+.tips-section {
+    background: #f5f7f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tips-grid {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tip-box {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.tip-box h4 {
+    margin-bottom: 10px;
+}
